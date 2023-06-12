@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap');
+
+@layer base{
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .logo{
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+    .navLIsm{
+        @apply p-2 text-tertiary cursor-pointer hover:bg-secondary rounded-md transition 
+    }
+
+    .navLImobile{
+        @apply p-4 w-full hover:bg-secondary text-center text-tertiary text-xl cursor-pointer transition
+    }
+
+    .socialIcons{
+        @apply flex justify-between w-32 flex-row items-center p-1 -ml-24 rounded-sm hover:ml-0 transition-all duration-500 cursor-pointer
+    }
+
+    .container{
+        @apply w-full h-screen bg-primary
+    }
+
+    .skillLogo{
+        @apply sm:h-36 flex items-center justify-center flex-col gap-1 py-2 hover:scale-125 cursor-pointer transition-all
+    }
+
+    .skillText{
+        @apply text-base text-quarternary
+    }
+
+    .input{
+        @apply my-1 outline-none placeholder:text-slate-500 px-4 py-2 bg-secondary text-slate-100
+    }
+}
